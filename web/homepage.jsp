@@ -13,5 +13,7 @@
     </head>
     <body>
         <h1>Hello World!</h1>
+        
+        <a href="${pageContext.request.contextPath}/entity/classroom.jsp">Classroom</a>
     </body>
 </html>
