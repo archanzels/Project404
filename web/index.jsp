@@ -3,7 +3,7 @@
     Created on : Aug 27, 2017, 7:34:42 AM
     Author     : Ark
 --%>
-
+<%@ page import ="java.sql.*" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -17,18 +17,12 @@
     </head>
 
     <body>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-3">
                 </div>
-                <div class="col-lg-6">
-                    <div class="pull-right" style="margin: 20px;">
-                        <a href="login/sign-up.jsp">
-                            <btn class="btn btn-primary">
-                                Sign Up
-                            </btn>
-                        </a>
-                    </div>
+                <div class="col-lg-4">
+                    <br/>
                     <form method="post" id='login-form' name='login-form' action="login/login.jsp">
                         <div class="form-group">
                             <input type="text" name="uname" id='uname' class="form-control" 
@@ -45,9 +39,9 @@
                     </form>
                 </div>
                 <div class="col-lg-3">
-
                 </div>
             </div>
         </div>
+
     </body>
 </html>
