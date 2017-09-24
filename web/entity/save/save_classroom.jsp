@@ -21,6 +21,6 @@
             c.setId(id);
             cDAO.update(c);
         }
-        response.sendRedirect("../classroom.jsp");
+        response.sendRedirect("../add/add_classroom.jsp");
     }
 %>

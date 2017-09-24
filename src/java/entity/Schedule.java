@@ -15,21 +15,15 @@ public class Schedule {
 
     private int id;
     private Subject subject;
-    private Teacher teacher;
-    private Classroom classroom;
-    private Semester semester;
-    private Date date;
+    private Timing timing; 
 
     public Schedule() {
     }
 
-    public Schedule(int id, Subject subject, Teacher teacher, Classroom classroom, Semester semester, Date date) {
+    public Schedule(int id, Subject subject, Timing timing) {
         this.id = id;
         this.subject = subject;
-        this.teacher = teacher;
-        this.classroom = classroom;
-        this.semester = semester;
-        this.date = date;
+        this.timing = timing;
     }
 
     public int getId() {
@@ -48,36 +42,12 @@ public class Schedule {
         this.subject = subject;
     }
 
-    public Teacher getTeacher() {
-        return teacher;
+    public Timing getTiming() {
+        return timing;
     }
 
-    public void setTeacher(Teacher teacher) {
-        this.teacher = teacher;
-    }
-
-    public Classroom getClassroom() {
-        return classroom;
-    }
-
-    public void setClassroom(Classroom classroom) {
-        this.classroom = classroom;
-    }
-
-    public Semester getSemester() {
-        return semester;
-    }
-
-    public void setSemester(Semester semester) {
-        this.semester = semester;
-    }
-
-    public Date getDate() {
-        return date;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
+    public void setTiming(Timing timing) {
+        this.timing = timing;
     }
 
 }

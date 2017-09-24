@@ -4,14 +4,14 @@
     Author     : Ark
 --%>
 
-<%@page import="entity.dao.impl.ClassroomDAOImpl"%>
-<%@page import="entity.dao.ClassroomDAO"%>
+<%@page import="entity.dao.impl.SubjectDAOImpl"%>
+<%@page import="entity.dao.SubjectDAO"%>
 <%
-    ClassroomDAO cDAO = new ClassroomDAOImpl();
+    SubjectDAO cDAO = new SubjectDAOImpl();
     if (request.getParameter("id") != null) {
         int id = Integer.parseInt(request.getParameter("id"));
         cDAO.delete(id);
-        response.sendRedirect("../add/add_classroom.jsp");
+        response.sendRedirect("../add/add_subject.jsp");
     }
     
 %>

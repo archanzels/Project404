@@ -3,14 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package entity;
+package entity.dao;
+
+import dao.GenDAO;
+import entity.Timing;
 
 /**
  *
  * @author Ark
  */
-public class LabTech {
-    private int id;
-    private String name;
-    private boolean status;
+public interface TimingDAO extends GenDAO<Timing> {
+
 }

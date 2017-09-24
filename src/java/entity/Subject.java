@@ -12,17 +12,19 @@ package entity;
 public class Subject {
 
     private int id;
-    private String subject_code, description;
-    private boolean type;
+    private String subject_code, subject_name;
+    private Boolean subject_type;
+    private Faculty fac;
 
     public Subject() {
     }
 
-    public Subject(int id, String subject_code, String description, boolean type) {
+    public Subject(int id, String subject_code, String subject_name, Boolean subject_type, Faculty fac) {
         this.id = id;
         this.subject_code = subject_code;
-        this.description = description;
-        this.type = type;
+        this.subject_name = subject_name;
+        this.subject_type = subject_type;
+        this.fac = fac;
     }
 
     public int getId() {
@@ -41,20 +43,28 @@ public class Subject {
         this.subject_code = subject_code;
     }
 
-    public String getDescription() {
-        return description;
+    public String getSubject_name() {
+        return subject_name;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setSubject_name(String subject_name) {
+        this.subject_name = subject_name;
     }
 
-    public boolean isType() {
-        return type;
+    public Boolean getSubject_type() {
+        return subject_type;
     }
 
-    public void setType(boolean type) {
-        this.type = type;
+    public void setSubject_type(Boolean subject_type) {
+        this.subject_type = subject_type;
+    }
+
+    public Faculty getFac() {
+        return fac;
+    }
+
+    public void setFac(Faculty fac) {
+        this.fac = fac;
     }
 
 }
